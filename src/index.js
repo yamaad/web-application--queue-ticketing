@@ -183,9 +183,7 @@ onSnapshot(countersDoc, (snapshot) => {
     if (onlineId) {
       if (counter.online) {
         onlineId.value = "go offline";
-        console.log("addclass", onlineId.classList);
         onlineId.classList.add("go-offline");
-        console.log("addclass", onlineId.classList);
         if (counter.serve) {
           compCurrId.disabled = false;
           callNextId.disabled = true;
@@ -206,7 +204,6 @@ if (clickBtn) {
   clickBtn.addEventListener("click", async function (e) {
     //*online || offline
     const counter = await getCounterData("counter" + e.target.name);
-    console.log("class name:", e.target.className);
     if (
       e.target &&
       (e.target.className == "btn1" || e.target.className == "btn1 go-offline")
