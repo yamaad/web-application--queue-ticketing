@@ -1,0 +1,133 @@
+.counters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 10px;
+  gap: 5px;
+  justify-content: space-evenly;
+}
+.counter {
+  border: solid black 2px;
+  text-align: center;
+  position: relative;
+}
+.counter-view .counters .counter {
+  display: grid;
+  grid-template-rows: 2fr repeat(3, 1fr);
+  row-gap: 5px;
+  padding: 5px;
+  justify-content: space-evenly;
+}
+
+.offline {
+  opacity: 0.5;
+}
+.ticket-box {
+  margin: auto;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  width: 500px;
+  justify-content: center;
+  align-self: center;
+  border: solid black 1px;
+  text-align: center;
+  padding: 10px;
+}
+
+.ticket-message {
+  opacity: 0.6;
+  color: red;
+  font-size: 14px;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.green-dot {
+  background-color: green;
+  opacity: 1;
+}
+
+.red-dot {
+  background-color: red;
+}
+
+.btn1,
+.btn2,
+.btn3 {
+  align-items: center;
+
+  box-sizing: border-box;
+
+  cursor: pointer;
+  display: inline-flex;
+
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -0.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.btn1 {
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+  fill: #000;
+}
+
+.btn2,
+.btn3 {
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+  fill: #000;
+}
+
+.btn1:hover {
+  border-color: rgb(53, 196, 1);
+  color: rgb(53, 196, 1);
+  fill: rgb(53, 196, 1);
+}
+.go-offline:hover {
+  border-color: rgb(255, 17, 0);
+  color: rgb(255, 0, 0);
+  fill: rgb(129, 2, 2);
+}
+.btn2:hover:enabled,
+.btn3:hover:enabled {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+.btn1:active,
+.btn2:active:enabled,
+.btn3:active:enabled {
+  background-color: rgb(187, 187, 187);
+}
+
+.btn2:disabled,
+.btn3:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+  background-color: #ccc;
+  border: #ccc;
+  fill: #ccc;
+}
