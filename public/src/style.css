@@ -27,7 +27,7 @@
   margin: auto;
   display: grid;
   grid-template-rows: 1fr 1fr 2fr;
-  width: 500px;
+  max-width: 500px;
   justify-content: center;
   align-self: center;
   text-align: center;
@@ -190,7 +190,7 @@ h2 {
   background-color: #fff;
   box-shadow: 1px 1px 3px rgba(100, 100, 100, 0.1);
   border-radius: 4px;
-  width: 50%;
+  min-width: 50%;
   max-width: 100%;
   /* border: solid black 1px; */
   margin: 0 auto;
@@ -203,4 +203,11 @@ h2 {
 .offline {
   opacity: 0.5;
   border-top: solid #bbb 2px !important;
+}
+
+@media (max-width: 1200px) {
+  .counters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
