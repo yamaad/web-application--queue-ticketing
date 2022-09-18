@@ -31,6 +31,7 @@
   border: solid black 1px;
   text-align: center;
   padding: 10px;
+  row-gap: 7px;
 }
 
 .ticket-message {
@@ -145,4 +146,9 @@ a {
 }
 .add {
   min-height: 36px;
+}
+
+h2 {
+  background-color: red;
+  margin: auto;
 }
