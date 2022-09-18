@@ -24,7 +24,7 @@
 .ticket-box {
   margin: auto;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 2fr;
   width: 500px;
   justify-content: center;
   align-self: center;
@@ -142,4 +142,7 @@ a {
 #index-header {
   text-align: center;
   font-size: 60px;
+}
+.add {
+  min-height: 36px;
 }

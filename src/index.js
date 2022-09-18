@@ -160,7 +160,7 @@ if (takeNo) {
         createdAt: serverTimestamp(),
       });
       sessionStorage.setItem("TicketNo", "TICKET NO:\n" + queueData.lastNo);
-      takeNo.value = sessionStorage.getItem("TicketNo");
+      takeNo.value = "TICKET NO:\n" + queueData.lastNo;
       await updateQueue(
         queueData.lastNo,
         queueData.nowServing,
